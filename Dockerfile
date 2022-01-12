@@ -6,6 +6,6 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 
 RUN chmod a+rx /usr/local/bin/youtube-dl
 
-RUN apt update -y && apt install -y nano
+RUN apt update -y && apt install -y nano ffmpeg
 
 CMD bash
