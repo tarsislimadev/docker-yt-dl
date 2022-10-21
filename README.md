@@ -1,7 +1,17 @@
 # Docker Youtube
 
-Imagem Docker para utilização do Youtube através da linha de comando
+Baixe videos do Youtube com Docker
 
-## Update
+## Como usar
 
-Updated 2022-01-12
+```
+docker run \
+  --network host -v $(pwd):/app -w /app tmvdl/yt-dl \
+  youtube-dl 'https://www.youtube.com/playlist?list=PLuzbmu7MdRdFyOFmuJOlPq8fsXEayMkUq'
+```
+
+Veja mais em [youtube-dl]()
+
+## Licença
+
+[MIT](./LICENSE)
