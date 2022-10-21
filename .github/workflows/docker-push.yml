@@ -1,9 +1,8 @@
-name: Pushing
+name: Docker push
 
 on:
   schedule:
     - cron: '22 12 * * *'
-  workflow_dispatch:
 
 jobs:
   docker:

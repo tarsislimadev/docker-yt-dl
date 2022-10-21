@@ -1,9 +1,8 @@
-name: Pull
+name: Docker pull
 
 on:
   schedule:
     - cron: '22 22 * * *'
-  workflow_dispatch:
 
 jobs:
   docker:
