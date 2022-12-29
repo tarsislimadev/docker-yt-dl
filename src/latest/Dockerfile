@@ -8,4 +8,4 @@ RUN chmod a+rx /usr/local/bin/youtube-dl
 
 RUN apt update -y && apt install -y nano ffmpeg
 
-CMD youtube-dl -i -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' 
+CMD youtube-dl -c -i --write-sub --format mp4 -o '%(uploader)s/%(playlist_id)s - %(playlist)s/%(playlist_index)s - %(title)s - %(id)s.%(ext)s' 
