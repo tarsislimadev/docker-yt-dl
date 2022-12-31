@@ -9,7 +9,7 @@ See more [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 ```sh
 docker run \
   --network host -v $(pwd):/app -w /app \
-  tmvdl/yt-dl youtube-dl 'https://www.youtube.com/playlist?list=PLuzbmu7MdRdFyOFmuJOlPq8fsXEayMkUq'
+  tmvdl/yt-dl youtube-dl 'https://www.youtube.com/playlist?list=0123456789'
 ```
 
 ## License
