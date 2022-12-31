@@ -1,12 +1,10 @@
 # Docker Youtube
 
-Baixe videos do Youtube com Docker
+Download from Youtube
 
-Veja mais em [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+See more [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
-## Como usar
-
-### Em ambiente de desenvolvimento
+## How to
 
 ```
 docker run \
@@ -16,6 +14,6 @@ docker run \
   youtube-dl 'https://www.youtube.com/playlist?list=PLuzbmu7MdRdFyOFmuJOlPq8fsXEayMkUq'
 ```
 
-## Licença
+## License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/brtmvdl/docker-yt-dl/blob/main/LICENSE)
