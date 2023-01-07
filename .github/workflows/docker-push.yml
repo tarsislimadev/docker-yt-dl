@@ -1,29 +1,29 @@
-name: Push to Docker Hub
+name: Docker push
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '22 12 * * *'
   push:
     branches: 
       - 'main'
-      - 'master'
+  schedule:
+    - cron: '50 23 0 * *'
+  workflow_dispatch:
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: Check out
         uses: actions/checkout@v2
 
-      - name: Login in Docker Hub
+      - name: Docker login
         uses: docker/login-action@v1 
         with:
           username: tmvdl
           password: ${{ secrets.GITHUBDOCKER }}
 
-      - name: Build Docker images
+      - name: Docker build
         run: sh env/build.sh
 
-      - name: Push to Docker Hub
+      - name: Docker push
         run: docker push tmvdl/yt-dl -a
+
