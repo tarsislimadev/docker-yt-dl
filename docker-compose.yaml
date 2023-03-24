@@ -1,7 +1,15 @@
 version: '3'
 
 services:
-  app:
+
+  latest:
+    image: 'tmvdl/yt-dl:latest'
     build: './src/latest'
     volumes: 
       - './src/latest:/app'
+
+  dlp:
+    image: 'tmvdl/yt-dl:dlp'
+    build: './src/dlp'
+    volumes: 
+      - './src/dlp:/app'
