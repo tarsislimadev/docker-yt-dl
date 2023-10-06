@@ -8,14 +8,20 @@ services:
     volumes: 
       - './src/latest:/app'
 
+  alpine:
+    image: 'tmvdl/yt-dl:alpine'
+    build: './src/alpine'
+    volumes: 
+      - './src/alpine:/app'
+
   dlp:
     image: 'tmvdl/yt-dl:dlp'
     build: './src/dlp'
     volumes: 
       - './src/dlp:/app'
 
-  alpine:
-    image: 'tmvdl/yt-dl:alpine'
-    build: './src/alpine'
+  dlp-alpine:
+    image: 'tmvdl/yt-dl:dlp-alpine'
+    build: './src/dlp-alpine'
     volumes: 
-      - './src/alpine:/app'
+      - './src/dlp-alpine:/app'
