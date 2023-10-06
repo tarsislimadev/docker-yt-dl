@@ -13,3 +13,9 @@ services:
     build: './src/dlp'
     volumes: 
       - './src/dlp:/app'
+
+  alpine:
+    image: 'tmvdl/yt-dl:alpine'
+    build: './src/alpine'
+    volumes: 
+      - './src/alpine:/app'
