@@ -7,11 +7,11 @@ See more [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 ## How to
 
 ```
-docker run \
+docker run --rm -it \
   --network host \
   -v $(pwd):/app \
-  -w /app tmvdl/yt-dl \
-  youtube-dl 'https://www.youtube.com/playlist?list=PLuzbmu7MdRdFyOFmuJOlPq8fsXEayMkUq'
+  -w /app tmvdl/yt-dl:dlp-alpine \
+  yt-dlp 'https://www.youtube.com/watch?v=tI55Zu9uZEM'
 ```
 
 ## License
