@@ -11,7 +11,7 @@ docker run --rm -it \
   --network host \
   -v $(pwd):/app \
   -w /app tmvdl/yt-dl:dlp-alpine \
-  yt-dlp 'https://www.youtube.com/watch?v=tI55Zu9uZEM'
+  yt-dlp --write-auto-sub 'https://www.youtube.com/watch?v=tI55Zu9uZEM'
 ```
 
 ## License
